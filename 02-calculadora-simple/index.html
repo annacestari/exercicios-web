@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Simple</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <h1 class="rainbow rainbow-text-animated">Anna's Calculator</h1>
+    <table class="calculator">
+      <tr>
+        <td colspan="3">
+          <input class="display-box" type="text" id="result" disabled />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="C"
+            onclick="clearScreen()"
+            id="clear-button"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="1" onclick="showNumberOrOperator('1')" />
+        </td>
+        <td>
+          <input type="button" value="2" onclick="showNumberOrOperator('2')" />
+        </td>
+        <td>
+          <input type="button" value="3" onclick="showNumberOrOperator('3')" />
+        </td>
+        <td>
+          <input type="button" value="/" onclick="showNumberOrOperator('/')" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="4" onclick="showNumberOrOperator('4')" />
+        </td>
+        <td>
+          <input type="button" value="5" onclick="showNumberOrOperator('5')" />
+        </td>
+        <td>
+          <input type="button" value="6" onclick="showNumberOrOperator('6')" />
+        </td>
+        <td>
+          <input type="button" value="-" onclick="showNumberOrOperator('-')" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="7" onclick="showNumberOrOperator('7')" />
+        </td>
+        <td>
+          <input type="button" value="8" onclick="showNumberOrOperator('8')" />
+        </td>
+        <td>
+          <input type="button" value="9" onclick="showNumberOrOperator('9')" />
+        </td>
+        <td>
+          <input type="button" value="+" onclick="showNumberOrOperator('+')" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="." onclick="showNumberOrOperator('.')" />
+        </td>
+        <td>
+          <input type="button" value="0" onclick="showNumberOrOperator('0')" />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="="
+            onclick="calculate()"
+            id="result-button"
+          />
+        </td>
+        <td>
+          <input type="button" value="*" onclick="showNumberOrOperator('*')" />
+        </td>
+      </tr>
+    </table>
+
+    <script type="text/javascript" src="scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+html,
+body {
+  background-color: #09090b;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-me .profile-picture {
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  transition: 500ms;
+}
+
+.flag {
+  margin-left: 5px;
+  border-radius: 50%;
+}
+
+.profile-picture:hover {
+  filter: grayscale(5);
+}
+
+.about-me h1,
+p {
+  padding-left: 25px;
+}
+
+.about-me h1 {
+  color: #fff;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+
+.about-me p {
+  color: hsl(240, 5%, 64.9%);
+  margin-top: -15px;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.about-me .info {
+  padding-top: 15px;
+  color: hsl(0, 0%, 86%);
+  font-weight: 500;
+  inline-size: 333px;
+  font-size: 1.1rem;
+  line-height: 22px;
+  letter-spacing: -0.05em;
+  overflow-wrap: break-word;
+}
+
+.socials {
+  margin-top: 65px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 69px;
+  height: 69px;
+  border-radius: 10px;
+  background-color: #222222;
+  opacity: 1;
+  transition: 500ms opacity;
+}
+
+.socials a:hover {
+  opacity: 0.7;
+}
